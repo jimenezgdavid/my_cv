@@ -18,7 +18,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[14pt, a4paper]{awesome-cv}
+\documentclass[16pt, a4paper]{awesome-cv}
+
+% Define what shoud look like code
+\def\code#1{\texttt{#1}}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -31,7 +34,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{2565b8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -53,15 +56,14 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{David Jimenez}{}
+\name{David Jimenez Gonzalez}{}
 \position{Data Scientist}
 %\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
-
 \mobile{(+506) 8895-8848}
 \email{jimenezgdavid@gmail.com}
 %\homepage{www.posquit0.com}
 %\github{posquit0}
-\linkedin{David Jimenez Gonzalez}
+\linkedin{jimenezgdavid}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -73,7 +75,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{"I would rather have questions that can't be answered than answers that can't be questioned" Richard P. Feynman}
 
 
 %-------------------------------------------------------------------------------
@@ -87,7 +89,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Byungjin Park~~~·~~~Résumé}
+  {David Jimenez Gonzalez~~~·~~~ Curriculum Vitae}
   {\thepage}
 
 
@@ -96,13 +98,17 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
-\input{resume/experience.tex}
+%\input{resume/experience.tex}
+\input{resume/work_experience.tex}
+%\input{resume/projects.tex}
+\input{resume/tools.tex}
 %\input{resume/honors.tex}
 %\input{resume/presentation.tex}
 %\input{resume/writing.tex}
 %\input{resume/committees.tex}
 \input{resume/education.tex}
-\input{resume/extracurricular.tex}
+\input{resume/certifications.tex}
+%\input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
